@@ -1,7 +1,7 @@
 {
   "name": "node-assessment",
   "version": "1.0.0",
-  "description": "",
+  "description": "## setup 1. Run `npm install` to install testing dependencies. 2. Create a file called `server.js`. All your server code and endpoints should be in this file. 3. Create a file called `userCtrl.js`. You will write your endpoints and export each one from this file. ** NOTE: `module.exports` your `app` at the end of `server.js`, otherwise the tests won't work **",
   "main": "users.js",
   "directories": {
     "test": "test"
@@ -12,14 +12,17 @@
     ]
   },
   "scripts": {
-    "test": "ava --verbose"
+    "test": "ava --verbose",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "ava": "^0.18.1",
-    "body-parser": "^1.16.0",
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "express-session": "^1.15.2",
     "immutable": "^3.8.1",
     "lodash": "^4.17.4",
     "sinon": "^1.17.7",
@@ -27,6 +30,11 @@
     "supertest-as-promised": "^4.0.2"
   },
   "repository": {
-    "url": "https://github.com/DevMountain/node-assessment"
-  }
+    "url": "git+https://github.com/DevMountain/node-assessment.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DevMountain/node-assessment/issues"
+  },
+  "homepage": "https://github.com/DevMountain/node-assessment#readme",
+  "devDependencies": {}
 }
